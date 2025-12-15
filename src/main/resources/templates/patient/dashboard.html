@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Patient Dashboard - HMS</title>
+</head>
+<body>
+    <h1>Welcome, Patient</h1>
+    <a th:href="@{/patient/history}">View Medical History</a>
+    <br/>
+    <form th:action="@{/logout}" method="post">
+        <button type="submit">Logout</button>
+    </form>
+</body>
+</html>
